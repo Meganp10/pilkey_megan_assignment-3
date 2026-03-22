@@ -17,7 +17,8 @@
   }
   
   .container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
   
@@ -28,16 +29,18 @@
    text-align: center;
    margin: 0 auto;
    padding-top: 10px;
+  font-size: 2em;
   }
   
-  #nav-bar{
+ #nav-bar {
+  background-color: #011608;
+}
+
+nav {
+  font-family: "Quattrocento", serif;
+  padding: 5px;
+}
     
-  nav{
-    font-family: "Quattrocento", serif;
-    background-color: #011608; 
-    padding: 5px;
-  }
-  
   nav a{
     text-decoration: none;
     color: #FFFFFE;
@@ -59,14 +62,50 @@
     a:hover{
       text-decoration: underline;
     }
-  }
   
   .content{
     display: grid;
     grid-template-columns: 40% 60%;
-    gap: 40px;
-    background-color: pink;
+
+    background-color: #E77F74;
   }
+  
+  .content img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+  
+  }
+  
+  .lh{
+    display: block;
+    padding-left: 40px;
+  }
+  
+  h1{
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    color: #FFFFFE;
+  }
+  
+  h2{
+    font-family: "Playfair Display", serif;
+    font-size: 1.3em;
+    color: #FFFFFE;
+  }
+  
+  p{
+    font-family: "Source Sans 3", serif;
+    font-size: 1em;
+    color: #FFFFFE;
+  }
+  
+  .hours {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  row-gap: 10px;
+  color: white;
+}
   
   
   </style>
@@ -92,9 +131,37 @@
     <li><a href="/">Services</a></li> 
     </ul>
   </nav>
+</div>   
+      
+ <div class="content">
+
+   <div class="lh">
+      <h1>Come Visit Us!</h1>
+      <h2>Location</h2>
+      <p> 2-90 Peel St</p>
+      <p>New Hamburg ON N3A 1E3 Canada</p>
+    
+      <h2>Hours</h2>
+     
+    <div class="hours">
+  <div class="day">Sunday</div>
+  <div class="time">10:00AM - 4:00PM</div>
+
+  <div class="day">Monday</div>
+  <div class="time">8:00AM - 6:00PM</div>
+
+  <div class="day">Tue-Fri</div>
+  <div class="time">8:00AM - 8:00PM</div>
+
+  <div class="day">Saturday</div>
+  <div class="time">9:00AM - 6:00PM</div>
+</div> 
+    </div>
+
+  <img src="Store.png" alt="Stone building view">
+</div>
 </div> 
   
-  
-  </div>
+
   </body>
 </html>
