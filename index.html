@@ -111,14 +111,44 @@ nav {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 450px 450px;
-    row-gap: 10px;
-    column-gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #011608;
   }
   
   .catering img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+  }
+  
+  .cateringtitle{
+    color: #011608;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    padding-left: 20px;
+    background-color: #FFF4F3;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .menutitle{
+    color: #011608;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    padding-left: 20px;
+    background-color: #BFD280;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  
+  .menu{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    height: 100%;
+    width: 100%;
   }
   
   </style>
@@ -173,20 +203,26 @@ nav {
 
   <img src="Store.png" alt="Stone building view">
 </div>
+   
+<div class="cateringtitle">Custom Catering</div>
       
   <div class="catering">
-  <img src="dip.webp" alt="Orange dip surrounded by colourful veggies">
+    
+     <img src="dip.webp" alt="Orange dip surrounded by colourful veggies">
      <img src="table.png" alt="Long table filled with colourful dishes and white plates">
      <img src="beets.png" alt="White large bowl holding a beet salad">
      <img src="cheese.png" alt="Filled charcuterie board with cheese, meat and olives.">
       </div>
       
+      <div class="menutitle">Menu</div>
       
-      
-      
-      
-      
-      
+       <div class="menu">
+    
+     <img src="dip.webp" alt="Orange dip surrounded by colourful veggies">
+     <img src="table.png" alt="Long table filled with colourful dishes and white plates">
+     <img src="beets.png" alt="White large bowl holding a beet salad">
+      </div>
+     
 </div> 
   
 
